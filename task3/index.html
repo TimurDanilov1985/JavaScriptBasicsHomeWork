@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header center">
+        <h1 class="header__text">Домашняя работа</h1>
+    </header>
+    <main class="main center">
+
+        <h2 class="main__name">Задание 1</h2>
+        <p class="main__text">Создайте функцию которая возводит переданное число в куб, необходимо вывести в консоль
+            результат 2^3 степени + 3 ^ 3 степени</p>
+        <button class="main__button" onclick="task1(2, 3)">Решение</button>
+
+        <p class="main__output-name">Вывод:</p>
+        <div class="main__output">
+            <p id="task1Output"></p>
+        </div>
+
+        <h2 class="main__name">Задание 2</h2>
+        <p class="main__text">Пользователь вводит с клавиатуры число, если ввёл текст, необходимо вывести что значение
+            задано неверно
+            Создать фукнцию, которая высчитывает 13% от данного числа и выводит в консоль текст "Размер заработной платы
+            за вычетом налогов равен значение"</p>
+
+        <p class="main__text">Введите число:</p>
+        <form action="#" class="main__form">
+            <input class="main__form__input" id="task2" type="text">
+        </form>
+        <button class="main__button" onclick="task2()">Решение</button>
+
+        <p class="main__output-name">Вывод:</p>
+        <div class="main__output1">
+            <p id="task2Output"></p>
+        </div>
+
+        <h2 class="main__name">Задание 3</h2>
+        <p class="main__text">Пользователь с клавиатуры вводит 3 числа, необходимо создать функцию, которая определяет
+            максимальное значение среди этих чисел</p>
+
+        <p class="main__text">Введите три числа:</p>
+
+        <form action="#" class="main__form formFlex">
+            <input class="main__form__input" id="task3" type="number">
+
+            <input class="main__form__input" id="task3_1" type="number">
+
+            <input class="main__form__input" id="task3_2" type="number">
+        </form>
+
+        <button class="main__button" onclick="task3()">Решение</button>
+
+        <p class="main__output-name">Вывод:</p>
+        <div class="main__output1">
+            <p id="task3Output"></p>
+        </div>
+
+        <h2 class="main__name">Задание 4</h2>
+        <p class="main__text">Необходимо реализовать четыре функции, каждая функция должна принимать по два числа и
+            выполнять одну из операций (каждая функция выполняет одну из них):<br>
+            1. Сложение<br>
+            2. Разность<br>
+            3. Умножение<br>
+            4. Деление<br>
+            Необходимо сделать так, чтобы функция вернула число, например выражение console.log(sum(2, 6)); должно
+            вывести число 8 в консоль (sum - функция сложения в данном примере, ваши названия функций могут отличаться).
+            Округлять значения, которые возвращают функции не нужно, однако, обратите внимание на разность, функция
+            должна вычесть из большего числа меньшее, либо вернуть 0, если числа равны. Функциям всегда передаются
+            корректные числа, проверки на NaN, Infinity делать не нужно.</p>
+
+            <div class="main__inputNumbers">
+                <p class="main__inputNumbers__name">Введите первое число:</p>
+                <p class="main__inputNumbers__name">Введите второе число:</p>
+            </div>
+        <form action="#" class="main__form formFlex">
+            <input class="main__form__input" id="task4" type="number">
+
+            <input class="main__form__input" id="task4_1" type="number">
+        </form>
+
+        <button class="main__button" onclick="sum()">Сложение</button>
+        <button class="main__button" onclick="diff()">Разность</button>
+        <button class="main__button" onclick="mult()">Умножение</button>
+        <button class="main__button" onclick="divis()">Деление</button>
+
+        <p class="main__output-name">Вывод:</p>
+        <div class="main__output outputMod">
+            <p id="task4Output"></p>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

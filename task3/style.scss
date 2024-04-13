@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #09101F
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.header {
+    background-color: black;
+
+    &__text {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: white;
+    }
+}
+
+.main {
+
+    &__name {
+        color: white;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        max-width: 110px;
+        margin-bottom: 20px;
+
+        &__input {
+            font-family: inherit;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            border: 0;
+            border-radius: 5px;
+
+            &[type="number"]::-webkit-outer-spin-button,
+            &[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .formFlex {
+        max-width: 400px;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__button {
+        width: 150px;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        padding: 10px 30px;
+        border-radius: 5px;
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+    &__output-name {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+
+    .outputMod {
+        margin-bottom: 40px;
+    }
+
+    &__output {
+        max-width: 110px;
+        min-height: 20px;
+        font-family: inherit;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__output1 {
+        max-width: 600px;
+        min-height: 20px;
+        font-family: inherit;
+        background-color: white;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    &__inputNumbers {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 35px;
+
+        &__name {
+            color: white;
+        }
+    }
+}
